@@ -13,9 +13,9 @@ jobs:
         uses: dawidd6/action-ansible-playbook@v2
         with:
           # Required, playbook filepath
-          playbook: boris-cleo/dummy-ansible/blob/main/ansible-playbooks/run_nu_services.yml@main
+          playbook: 'boris-cleo/dummy-ansible/blob/main/ansible-playbooks/run_nu_services.yml@main'
           # Optional, directory where playbooks live
-          directory: boris-cleo/dummy-ansible/tree/main/ansible-playbooks@main
+          directory: 'boris-cleo/dummy-ansible/tree/main/ansible-playbooks@main'
           # Optional, SSH private key
           key: ${{secrets.SSH_PRIVATE_KEY}}
           # Optional, literal inventory file contents
