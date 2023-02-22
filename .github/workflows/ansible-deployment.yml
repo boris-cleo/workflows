@@ -35,6 +35,6 @@ jobs:
           options: |
             --inventory .hosts.yml
             --limit backup
-            --extra-vars hello=there
+            --extra-vars "limit_customer=\"backup-\""
             --verbose
-              
+          
