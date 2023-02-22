@@ -1,5 +1,8 @@
 name: Ansible deployment
 
+on:
+  workflow_call:
+
 jobs:
   run-playbook:
     runs-on: ubuntu-latest
